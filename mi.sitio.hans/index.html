@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkateZone - Todo sobre Skateboarding</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-boombox-fill me-2"></i>
+                SkateZone
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trucos">Trucos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#spots">Spots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 text-white">
+                    <h1 class="display-3 fw-bold mb-4">Domina las calles con tu skate</h1>
+                    <p class="lead mb-4">Aprende los mejores trucos, encuentra los spots más increíbles y conoce la comunidad skater más grande del país.</p>
+                    <a href="#trucos" class="btn btn-danger btn-lg px-4 me-2">Aprende Trucos</a>
+                    <a href="#contacto" class="btn btn-outline-light btn-lg px-4">Únete a nosotros</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trucos Section -->
+    <section id="trucos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-danger">Trucos de Skate</h2>
+                <p class="lead">Domina estos trucos básicos para empezar</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-danger bg-opacity-10 text-danger rounded-circle p-3 d-inline-block mb-3">
+                                <i class="bi bi-arrow-up-right fs-1"></i>
+                            </div>
+                            <h4 class="card-title">Ollie</h4>
+                            <p class="card-text">El truco básico que todo skater debe dominar. Es la base para la mayoría de los otros trucos.</p>
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/9Nl1pz86dGg" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-danger bg-opacity-10 text-danger rounded-circle p-3 d-inline-block mb-3">
+                                <i class="bi bi-arrow-repeat fs-1"></i>
+                            </div>
+                            <h4 class="card-title">Kickflip</h4>
+                            <p class="card-text">Uno de los trucos más populares. La tabla gira a lo largo del eje de la cola a la nariz.</p>
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/9Nl1pz86dGg" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-danger bg-opacity-10 text-danger rounded-circle p-3 d-inline-block mb-3">
+                                <i class="bi bi-arrow-down-right fs-1"></i>
+                            </div>
+                            <h4 class="card-title">Grind</h4>
+                            <p class="card-text">Desliza los trucks de tu skate sobre un borde o baranda. Requiere equilibrio y control.</p>
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/9Nl1pz86dGg" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo Section -->
+    <section id="equipo" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-danger">Equipo Esencial</h2>
+                <p class="lead">Lo que necesitas para empezar</p>
+            </div>
+            <div class="row">
+                <!-- Carousel -->
+                <div id="equipoCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="card border-0 shadow-sm">
+                                        <img src="https://images.unsplash.com/photo-1564982753619-48d5d8366b23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Tabla de skate">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Tabla</h5>
+                                            <p class="card-text">El elemento principal. Elige el tamaño adecuado para tu estilo y talla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="card border-0 shadow-sm">
+                                        <img src="https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Trucks">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Trucks</h5>
+                                            <p class="card-text">Los ejes que conectan las ruedas a la tabla. Deben coincidir con el ancho de tu tabla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="card border-0 shadow-sm">
+                                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Ruedas">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Ruedas</h5>
+                                            <p class="card-text">Elige el tamaño y dureza según el tipo de superficie donde patinarás.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#equipoCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#equipoCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spots Section -->
+    <section id="spots" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-danger">Mejores Spots</h2>
+                <p class="lead">Lugares increíbles para patinar</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1572776685600-3f38c1a7c57d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Skatepark">
+                        <div class="card-body">
+                            <h5 class="card-title">Skatepark Central</h5>
+                            <p class="card-text">El mejor skatepark de la ciudad con bowls, rampas y street.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">5 km de distancia</small>
+                                <span class="badge bg-danger">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Plaza">
+                        <div class="card-body">
+                            <h5 class="card-title">Plaza del Arte</h5>
+                            <p class="card-text">Perfecto para street con escaleras, bancos y barandillas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">3 km de distancia</small>
+                                <span class="badge bg-success">Nuevo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Bowls">
+                        <div class="card-body">
+                            <h5 class="card-title">Bowls del Oeste</h5>
+                            <p class="card-text">Series de bowls interconectados para surfear en concreto.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">8 km de distancia</small>
+                                <span class="badge bg-warning text-dark">Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1541599549144-bc9cdfaad842?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="DIY Spot">
+                        <div class="card-body">
+                            <h5 class="card-title">Spot DIY Riverside</h5>
+                            <p class="card-text">Construido por skaters para skaters. Siempre en evolución.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">6 km de distancia</small>
+                                <span class="badge bg-info">Comunitario</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold text-center mb-5">Únete a la Comunidad</h2>
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="nivel" class="form-label">Nivel de experiencia</label>
+                                <select class="form-select" id="nivel">
+                                    <option value="principiante">Principiante</option>
+                                    <option value="intermedio">Intermedio</option>
+                                    <option value="avanzado">Avanzado</option>
+                                    <option value="pro">Pro</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        Suscribirme al newsletter
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-danger btn-lg px-4">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-black text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="bi bi-boombox-fill me-2"></i>SkateZone</h5>
+                    <p class="small">La comunidad skater más grande del país. Desde 2010.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-white">Inicio</a></li>
+                        <li><a href="#trucos" class="text-decoration-none text-white">Trucos</a></li>
+                        <li><a href="#equipo" class="text-decoration-none text-white">Equipo</a></li>
+                        <li><a href="#spots" class="text-decoration-none text-white">Spots</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Redes</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-tiktok fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small mb-0">&copy; 2023 SkateZone. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="small mb-0">Hecho con <i class="bi bi-heart-fill text-danger"></i> por skaters para skaters</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
